@@ -1,16 +1,21 @@
-const valorIngressoAdulto = 20;
-// valorIngressoAdulto = 30; -> da erro
+/* 
+Dos tipos primitivos no Java Script:
+"referência" e "valores"
 
-/* A variável const não pode ter seu valor redefinido 
-mudado, ao contrário da variável let
-Ex: (é uma boa prática que se use o "const" como valor de 
-variáveis e só use o "let" em caso de necessidade de reatri-
-buir os valores da variável)
-
-let valorIngressoAdulto = 20;
-valorIngressoAdulto = 30; -> Reatribui o valor (altera
-o valor da variável)
+referência:
+string
+boolean
+undefined
+unknow
 */
 
-console.log(valorIngressoAdulto);
+let nome = 'Rafael as$#54'; //string literal
+let idade = 25; // number literal
+let estaAprovado = true; //boolean
+let sobrenome ; //undefined
+// let sobrenome = undefined; raramente usado
+let corSelecionada = null; /* Vazio, empregue no caso de
+você querer redefinir uma variável
+Ex: "Azul" */
+
 
