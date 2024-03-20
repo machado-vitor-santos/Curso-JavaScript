@@ -1,16 +1,14 @@
-const valorIngressoAdulto = 20;
-// valorIngressoAdulto = 30; -> da erro
+let nome = 'Rafael';
+let idade = 25.05; /* variável tipo "number" sem diferenciação
+para com números decimais, ao contrário de outras linguagens*/
 
-/* A variável const não pode ter seu valor redefinido 
-mudado, ao contrário da variável let
-Ex: (é uma boa prática que se use o "const" como valor de 
-variáveis e só use o "let" em caso de necessidade de reatri-
-buir os valores da variável)
+let estaAprovado = true;
+let sobrenome = undefined;
+let corSelecionada = null;
 
-let valorIngressoAdulto = 20;
-valorIngressoAdulto = 30; -> Reatribui o valor (altera
-o valor da variável)
-*/
-
-console.log(valorIngressoAdulto);
-
+console.log (typeof nome)
+console.log (typeof idade)
+console.log (typeof sobrenome)
+console.log (typeof corSelecionada)
+/*typeof var -> indica o tipo primitivo 
+da variável*/
