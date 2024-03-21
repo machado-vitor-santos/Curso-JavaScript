@@ -1,25 +1,8 @@
-/*
-Tipo de referências:
-- Os objetos {
-    classe: (atributos qualitativos descritivos dos objetos),
-    classe2: 'atributo',
-    classe3: 456
-}
-- os arrays 
+// Aula funções https://www.youtube.com/watch?v=i6Oi-YtXnAU&list=PLeuwJul7tRBfsm7sxnR5_7wG3KvaQ6oOt&index=13
+// minuto 32:35 corrompida
 
-(estes consistem em um conjunto de dados que podem ser 
-    encontrados através de um índice, ou seja um vetor)
-
-- as functions
-*/
-
-let familia = [true,31,'Jhonatam',41]; /* Podem 
-misturar diferentes tipos primitivos */
-console.log(familia[0])/* forma de se referênciar
-ao índice, espaço de memória dentro do vetor que
-deverá ser consultado
-obs. lembrando que começa no 0*/
-console.log(familia.length)
+// motivo: não verifiquei a conexão com a internet ao subir os arquivos para o GitHub
+// Ajustar no futuro caso esqueça
 
 
 
