@@ -1,16 +1,25 @@
-const valorIngressoAdulto = 20;
-// valorIngressoAdulto = 30; -> da erro
+/*
+Tipo de referências:
+- Os objetos {
+    classe: (atributos qualitativos descritivos dos objetos),
+    classe2: 'atributo',
+    classe3: 456
+}
+- os arrays 
 
-/* A variável const não pode ter seu valor redefinido 
-mudado, ao contrário da variável let
-Ex: (é uma boa prática que se use o "const" como valor de 
-variáveis e só use o "let" em caso de necessidade de reatri-
-buir os valores da variável)
+(estes consistem em um conjunto de dados que podem ser 
+    encontrados através de um índice, ou seja um vetor)
 
-let valorIngressoAdulto = 20;
-valorIngressoAdulto = 30; -> Reatribui o valor (altera
-o valor da variável)
+- as functions
 */
 
-console.log(valorIngressoAdulto);
+let familia = [true,31,'Jhonatam',41]; /* Podem 
+misturar diferentes tipos primitivos */
+console.log(familia[0])/* forma de se referênciar
+ao índice, espaço de memória dentro do vetor que
+deverá ser consultado
+obs. lembrando que começa no 0*/
+console.log(familia.length)
+
+
 
