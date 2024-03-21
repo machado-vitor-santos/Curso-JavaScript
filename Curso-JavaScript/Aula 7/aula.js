@@ -1,8 +1,21 @@
-// Aula funções https://www.youtube.com/watch?v=i6Oi-YtXnAU&list=PLeuwJul7tRBfsm7sxnR5_7wG3KvaQ6oOt&index=13
-// minuto 32:35 corrompida
+/* Função
+faz base de todos os softwares em Java Script, porque ela vai
+controlar o fluco de execução, toda entrada e saída de dados*/
 
-// motivo: não verifiquei a conexão com a internet ao subir os arquivos para o GitHub
-// Ajustar no futuro caso esqueça
+// Nomear função
+// Verbo + Substantivo
+// resetaCor
+// transformarObjeto
+// alterarTamanho
+
+let corSite = "Azul";
+
+function resetaCor(cor){
+    corSite = "cor";
+};
+
+console.log(corSite);
+resetaCor();
 
 
 
