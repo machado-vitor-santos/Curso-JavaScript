@@ -1,16 +1,23 @@
-const valorIngressoAdulto = 20;
-// valorIngressoAdulto = 30; -> da erro
+// Operadores Aritméticos(matemáticos):
+// Operadores de Atribuição
+// Operadores de Comparação
+// Operadores Lógicos
+// Operadores Bitwise
 
-/* A variável const não pode ter seu valor redefinido 
-mudado, ao contrário da variável let
-Ex: (é uma boa prática que se use o "const" como valor de 
-variáveis e só use o "let" em caso de necessidade de reatri-
-buir os valores da variável)
+// Operadores aritméticos:
+// let salario = 100;
+// +, -, *, /, **
 
-let valorIngressoAdulto = 20;
-valorIngressoAdulto = 30; -> Reatribui o valor (altera
-o valor da variável)
-*/
+// console.log(salario + salario);
+// console.log(salario - salario);
+// console.log(salario * salario);
+// console.log(salario / salario);
+// console.log(5 ** 5);
 
-console.log(valorIngressoAdulto);
+// ++ -- // Operadores de decremento e incremento
+// let idade = 18;
+// console.log(++idade); // incrementa 1
+// console.log(idade);
 
+let idade = 18;
+console.log(--idade); // decrementa 1
