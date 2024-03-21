@@ -1,23 +1,52 @@
-// Operadores Aritméticos(matemáticos):
-// Operadores de Atribuição
-// Operadores de Comparação
-// Operadores Lógicos
-// Operadores Bitwise
+// Operador Lógico e (&&)
+// Retorna TRUE se os dois operandos forem true
 
-// Operadores aritméticos:
-// let salario = 100;
-// +, -, *, /, **
+// console.log(true && false);
 
-// console.log(salario + salario);
-// console.log(salario - salario);
-// console.log(salario * salario);
-// console.log(salario / salario);
-// console.log(5 ** 5);
+/* Imagine que temos uma pessoa e ela só pode aplicar para uma 
+vaga de trabalho caso seja maior de 18 anos e tenha carteira
+de trabalho.*/
 
-// ++ -- // Operadores de decremento e incremento
-// let idade = 18;
-// console.log(++idade); // incrementa 1
-// console.log(idade);
+// let maiorDeIdade = false;
+// let possuiCarteiraDeTrabalho = true;
+// let podeAplicar = maiorDeIdade && possuiCarteiraDeTrabalho;
+// console.log(podeAplicar);
 
-let idade = 18;
-console.log(--idade); // decrementa 1
+// Operador Lógico ou (||)
+// Retorna true se apenas um dos operandos for true
+
+// let maiorDeIdade = false;
+// let possuiCarteiraDeTrabalho = false;
+// let podeAplicar = maiorDeIdade || possuiCarteiraDeTrabalho;
+//  console.log(podeAplicar);
+
+// Operador NOT (!) -> ao contrário
+// let candidatoRecusado = !podeAplicar;
+// console.log('Candidato Recusado', candidatoRecusado);
+
+// Deveres de casa:
+/* João quer tirar sua carteira de motorista, para tal deve
+ter seus 2200 reais e pelo menos 17 anos */
+
+// let TemIdadeRequerida = false;
+// let TemDinheiroSuficiente = true;
+// let CarteiraDeMotorista = TemIdadeRequerida && TemDinheiroSuficiente;
+// console.log(CarteiraDeMotorista)
+
+// let candidatoRecusado = !CarteiraDeMotorista;
+// console.log('O candidato foi recusado?', candidatoRecusado);
+
+// Deveres de casa:
+/* João quer tirar seu passaporte do Betto Carreiro no entanto
+tem 300 rais no pix e 1000 no cartão de crédito, sabendo que o
+passaporte custa 500 joão pode comprá-lo?*/
+
+let quantoTemNoPix = false;
+let quantoTemNoCredito = false;
+let comprarPassaporte = quantoTemNoPix || quantoTemNoCredito;
+console.log(comprarPassaporte)
+
+let semPassaporte = !comprarPassaporte;
+console.log('Fica-rá sem passaporte do Betto Carreiro', semPassaporte);
+
+
