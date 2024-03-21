@@ -5,9 +5,15 @@ function dizerNome(){
 
 dizerNome();
 
-function multiplicarPorDois(){
-
+// Faz uma operação (cálculo) e retorna algo
+function multiplicarPorDois(valor){
+    return valor* 2;
 };
+
+//console.log(multiplicarPorDois(5));
+
+let resultado = multiplicarPorDois(5);
+console.log(resultado);
 
 
 
