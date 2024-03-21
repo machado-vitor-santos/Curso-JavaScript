@@ -1,16 +1,33 @@
-const valorIngressoAdulto = 20;
-// valorIngressoAdulto = 30; -> da erro
+let nome = 'Rafael';
+let idade = 25;
+let estaAprovado = true;
+let sobrenome = undefined;
+let corSelecionada = null;
 
-/* A variável const não pode ter seu valor redefinido 
-mudado, ao contrário da variável let
-Ex: (é uma boa prática que se use o "const" como valor de 
-variáveis e só use o "let" em caso de necessidade de reatri-
-buir os valores da variável)
-
-let valorIngressoAdulto = 20;
-valorIngressoAdulto = 30; -> Reatribui o valor (altera
-o valor da variável)
+/*
+Tipo de referências:
+- Os objetos {
+    classe: (atributos qualitativos descritivos dos objetos),
+    classe2: 'atributo',
+    classe3: 456
+}
+- os arrays e
+- as functions
 */
 
-console.log(valorIngressoAdulto);
+let pessoa = {
+    nome: 'Rafael',
+    idade: 25,
+    estaAprovado: true,
+    sobrenome: 'de Souza',
+    nacionalidade: 'brasileiro',
+    escolaridade: 'ensino médio completo',
+    rendaMensal: 4500
+};
+
+console.log(pessoa);
+console.log(typeof pessoa.nome)
+; /* forma de se referir a um 
+atributo descritivo do objeto
+Ex: pessoa.atributo */
 
