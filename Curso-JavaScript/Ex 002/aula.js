@@ -16,12 +16,16 @@ let b = 90;
 };
 compararNumero();*/
 
-let valorMaior = max(4,9)
+let valorMaior = max(16, 9)
 console.log(valorMaior)
 
-function max(numero1,numero2) {
-    if (numero1 > numero2)
-        return numero1;
-    else return numero2;
+function max(numero1, numero2) {
+    // if (numero1 > numero2)
+    //     return numero1;
+    // else return numero2;
+    return numero1 > numero2 ? numero1 : numero2;
 }
+
+
+
 
