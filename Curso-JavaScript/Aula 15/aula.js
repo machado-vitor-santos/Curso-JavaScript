@@ -5,14 +5,14 @@
 // Se estiver entre 12:00 até as 18:00 : Boa Tarde!
 // Caso contrário : Boa Noite!
 
-let hora = 10;
-if (hora > 6 && < 12) {
+let hora = 13;
+if (hora > 6 && hora < 12) {
     console.log("Bom dia!"); // a ser executado
-};
+} 
 
-else if (hora > 12 && < 18) {
+else if (hora > 12 && hora < 18) {
     console.log("Boa Tarde!"); // outra condição
-};
+}
 
 else {
     console.log("Boa noite!"); //código a ser executado
