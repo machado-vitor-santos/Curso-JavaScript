@@ -1,20 +1,27 @@
-let a = 'vermelho';
-let b = 'azul';
+//Máximo entre dois valores
+/* Escreva uma função que usa dois numeros e retorna o maior
+entre eles*/
 
-// function trocarValores(cor1, cor2){
-//     a = cor1;
-//     b = cor2;
-// };
+let a = 10;
+let b = 90;
 
-// trocarValores("Azul","Vermelho")
-// console.log(a);
-// console.log(b);
+/*function compararNumero() {
+    if (a > b) {
+        console.log(a);
+    } else if (a < b) {
+        console.log(b);
+    } else {
+        console.log('Os números são iguais, não há maior');
+    }
+};
+compararNumero();*/
 
-let c = a;
-a = b;
-b = c;
+let valorMaior = max(4,9)
+console.log(valorMaior)
 
-console.log(a);
-console.log(b);
-
+function max(numero1,numero2) {
+    if (numero1 > numero2)
+        return numero1;
+    else return numero2;
+}
 
