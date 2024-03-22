@@ -1,20 +1,14 @@
-let a = 'vermelho';
-let b = 'azul';
+// fizzbuzz 
+// Divisível por 3 => Fizz
+// Divisível por 5 => Buzz
+// Divisível por 3 e 5 => FfizzBuzz 
+// Não divisível por 3 ou 5 => entrada
+// Não é um número => 'Não é um número'
 
-// function trocarValores(cor1, cor2){
-//     a = cor1;
-//     b = cor2;
-// };
+const resultado = fizzBuzz(15);
+console.log(resultado);
 
-// trocarValores("Azul","Vermelho")
-// console.log(a);
-// console.log(b);
+function fizzBuzz(entrada){
+    if (entrada % 3 == 0) 
 
-let c = a;
-a = b;
-b = c;
-
-console.log(a);
-console.log(b);
-
-
+    };
