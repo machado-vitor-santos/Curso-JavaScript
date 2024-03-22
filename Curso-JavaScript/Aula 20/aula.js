@@ -22,3 +22,8 @@ const cores = ['Vermelho', 'Azul', 'Verde'];
 for(let indice in cores) {
     console.log(indice,cores[indice])
 }
+
+const nomes = ['Pablo','Maria','Enzo', 'Roberto']
+for (let indice in nomes){
+    console.log(indice, nomes[indice])
+}
