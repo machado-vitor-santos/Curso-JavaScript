@@ -12,7 +12,7 @@
 // Armazenar os multiplos de 5
 // Somar os dois
 
-somar(345345);
+somar(10000000);
 
 function somar(limite) {
     let multiploDe3 = 0;
