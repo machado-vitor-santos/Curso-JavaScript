@@ -1,20 +1,26 @@
-let a = 'vermelho';
-let b = 'azul';
+// Encontre strings:
+// Criar um método para ler propriedades de um objeto e
+// exibir somente as propriedades do tipo string que estão neste objeto
 
-// function trocarValores(cor1, cor2){
-//     a = cor1;
-//     b = cor2;
-// };
+const filme = {
+    titulo: 'Vingadores',
+    ano: 2018,
+    diretor: 'Robin',
+    personagem: 'Thor'
+}
 
-// trocarValores("Azul","Vermelho")
-// console.log(a);
-// console.log(b);
+ExibirPropriedades(filme);
 
-let c = a;
-a = b;
-b = c;
-
-console.log(a);
-console.log(b);
+function ExibirPropriedades(obj) {
+    for(let indice in obj){
+        if(typeof obj[indice] !== 'number')
+        console.log(indice, obj[indice])
+    }
+};
 
 
+
+/*for (let prop in obj){
+    if(typeof obj[prop] === 'string')
+    console.log(prop, obj[prop])
+}*/
