@@ -1,20 +1,21 @@
-let a = 'vermelho';
-let b = 'azul';
+// Medidor de Velocidade
 
-// function trocarValores(cor1, cor2){
-//     a = cor1;
-//     b = cor2;
-// };
+// Velocidade máxima de 70 km => ok
+// A cada 5km a cima do limite => 1 ponto na carteira
+// Caso os pontos sejam maior que 12 => 'carteira suspensa
+// Math.floor(1.3) = 1; => arredonda para o inteiro mais próximo
 
-// trocarValores("Azul","Vermelho")
-// console.log(a);
-// console.log(b);
+let testeVelocidade = verificarVelocidade(210);
 
-let c = a;
-a = b;
-b = c;
-
-console.log(a);
-console.log(b);
-
-
+function verificarVelocidade(velocidade){
+    if (velocidade <= 70)
+        console.log("ok");
+    else { // é possível um aninhamento de um if dentro de um else
+        const pontos = ((velocidade - 70) / 5); // a variável pontos antes do if, facilita em muito criar as condições para a limpeza do código sem necessidade de tantas restrições matemáticas
+        if (pontos > 12)
+        console.log('carteira suspensa');
+        else {
+            console.log('Pontos: ',Math.floor(pontos));
+        }
+    }
+};
