@@ -1,20 +1,27 @@
-let a = 'vermelho';
-let b = 'azul';
+// Multiplos de 3 e 5
+// Criar função somar que retorne a
+// soma de todos os múltiplos de 3 e 5
 
-// function trocarValores(cor1, cor2){
-//     a = cor1;
-//     b = cor2;
-// };
+// Mutiplos de 3
+//3,6,9
+//Multiplos de 5
+//5,10
 
-// trocarValores("Azul","Vermelho")
-// console.log(a);
-// console.log(b);
+//Somando os multiplos
+// Armazenar os multiplos de 3
+// Armazenar os multiplos de 5
+// Somar os dois
 
-let c = a;
-a = b;
-b = c;
+somar(345345);
 
-console.log(a);
-console.log(b);
-
-
+function somar(limite) {
+    let multiploDe3 = 0;
+    let multiploDe5 = 0;
+    for (let i = 0; i <= limite; ++i) {
+        if (i % 3 === 0)
+            multiploDe3 += i;
+        if (i % 5 === 0)
+            multiploDe5 += i;
+    }
+    console.log(multiploDe3 + multiploDe5)
+};
