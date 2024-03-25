@@ -17,16 +17,12 @@ function mediaDoAluno(notas) {
     for (let indice in notas) {
         mediaDoAluno += (notas[indice]) / divisorMedia;
     }
-    if (mediaDoAluno <= 59)
-        console.log('A média do aluno foi ', Math.floor(mediaDoAluno), ' e o conceito foi:(F)');
-    if (mediaDoAluno >= 60 && mediaDoAluno <= 69)
-        console.log('A média do aluno foi ', Math.floor(mediaDoAluno), ' e o conceito foi:(D)');
-    if (mediaDoAluno >= 70 && mediaDoAluno <= 79)
-        console.log('A média do aluno foi ', Math.floor(mediaDoAluno), ' e o conceito foi:(C)');
-    if (mediaDoAluno >= 80 && mediaDoAluno <= 89)
-        console.log('A média do aluno foi ', Math.floor(mediaDoAluno), ' e o conceito foi:(D)');
-    if (mediaDoAluno >= 90 && mediaDoAluno <= 100)
-        console.log('A média do aluno foi ', Math.floor(mediaDoAluno), ' e o conceito foi:(A)');
+    if (mediaDoAluno <= 59) return 'O conceito do aluno foi: F';
+    if (mediaDoAluno <= 69) return 'O conceito do aluno foi: D';
+    if (mediaDoAluno <= 79) return 'O conceito do aluno foi: C';
+    if (mediaDoAluno <= 89) return 'O conceito do aluno foi: D';
+    if (mediaDoAluno <= 100) return 'O conceito do aluno foi: A';
+
 
 };
 
