@@ -21,8 +21,8 @@ function criarCelular(marcaCelular, tamanhoTela,
 // sempre está em maiúsculo.
 function Celular(marcaCelular, tamanhoTela, capacidadeBateria) {
    this.marcaCelular = marcaCelular,
-   this.tamanhoTela = tamanhoTela,
-   this.capacidadeBateria = capacidadeBateria
+      this.tamanhoTela = tamanhoTela,
+      this.capacidadeBateria = capacidadeBateria
    this.ligar = function () {
       console.log('Fazendo ligação...');
    }
@@ -47,18 +47,18 @@ function criarNotebook(marcaNote, modeloNote, corNote) {
    };
 };
 
-// let notebookCriado = criarNotebook('HP', 'Celeron 3.0', 'Cinza');
-// console.log(notebookCriado)
+let notebookCriado = criarNotebook('HP', 'Celeron 3.0', 'Cinza');
+console.log(notebookCriado);
 
 // convertendo a função factory em constructor
-function Notebook(marcaNote, modeloNote, corNote) {
-   this.marcaNote = marcaNote,
-      this.modeloNote = modeloNote,
-      this.corNote = corNote,
-      this.desligar = function() {
-         console.log('Desligar em 3..2..1');
-      }
-};
+// function Notebook(marcaNote, modeloNote, corNote) {
+//    this.marcaNote = marcaNote,
+//       this.modeloNote = modeloNote,
+//       this.corNote = corNote,
+//       this.desligar = function () {
+//          console.log('Desligar em 3..2..1');
+//       }
+// };
 
-const notebook = new Notebook('HP', 'Celeron 3.0', 'Cinza');
-console.log(notebook);
+// const notebook = new Notebook('HP', 'Celeron 3.0', 'Cinza');
+// console.log(notebook);
