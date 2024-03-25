@@ -1,20 +1,12 @@
-let a = 'vermelho';
-let b = 'azul';
+//  Contador de asteriscos
 
-// function trocarValores(cor1, cor2){
-//     a = cor1;
-//     b = cor2;
-// };
+// criar uma função que exibe a quantidade de *
+// que aquela linha possui
 
-// trocarValores("Azul","Vermelho")
-// console.log(a);
-// console.log(b);
+exibirAsteriscos(5);
 
-let c = a;
-a = b;
-b = c;
-
-console.log(a);
-console.log(b);
-
-
+function exibirAsteriscos(linhas) {
+    for (let indice in linhas){
+        console.log(linhas[indice])
+    }
+};
