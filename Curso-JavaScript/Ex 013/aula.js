@@ -1,20 +1,29 @@
-let a = 'vermelho';
-let b = 'azul';
+// Montador de Postagem do Blog (Exercício)
 
-// function trocarValores(cor1, cor2){
-//     a = cor1;
-//     b = cor2;
-// };
+// Eu quero que você crie um objeto de postagem de blog que
+//vai conter as seguintes propriedades
 
-// trocarValores("Azul","Vermelho")
-// console.log(a);
-// console.log(b);
+// objeto com nome 'postagem'
+/*
+titulo
+mensagem
+autor
+vizualizações
+comentários // dentro terá um array
+    (autor, mensagem)
+estaAoVivo
+*/
 
-let c = a;
-a = b;
-b = c;
+let postagem = {
+    titulo: 'A vida de Martim',
+    mensagem: 'Todo o conteúdo da mensagem',
+    autor: 'Jorge Gonzalez',
+    vizualizações: 4500,
+    comentarios: [  // Como inserir um array em um objeto
+        { autor: 'a', mensagem: 'b'},
+        { autor: 'a', mensagem: 'b'}
+    ],
+    estaAovivo: true
+}
 
-console.log(a);
-console.log(b);
-
-
+console.log(postagem);
