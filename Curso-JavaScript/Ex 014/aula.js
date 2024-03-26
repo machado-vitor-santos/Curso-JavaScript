@@ -11,10 +11,7 @@ function LerPostagem(titulo, mensagem, autor,
     this.mensagem = mensagem,
     this.autor = autor,
     this.visualizacoes = visualizacoes,
-    this.comentario = Array [
-        {autor:'a', mensagem:'b'},
-        {autor:'a', mensagem:'b'}
-    ], 
+    this.comentario = [],
     this.estaAovivo = estaAovivo
 };
 
