@@ -8,6 +8,6 @@ document.getElementByid("maia-signature").innerText = `Olá meu nome é jfniwjeh
 // seleciona o elemento pela classe
 // sempre que se trabalha com uma lista ou com um array é 
 // necessário acessar por índice.
-documento.getElementsByClass('nomeDoElemento')[0].innerText = `Chubilabilau é 10`;
+document.getElementsByClass('nomeDoElemento')[0].innerText = `Chubilabilau é 10`;
 
 
