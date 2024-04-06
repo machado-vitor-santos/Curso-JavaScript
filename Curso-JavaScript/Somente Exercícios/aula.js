@@ -40,6 +40,7 @@ if(cod == codCoxinha) {
 calculeValorTotal(memoria1[1], memoria2[1], memoria3[1], memoria4[1], memoria5[1], (memoria1[2]* qtd), (memoria2[2]* qtd), (memoria3[2]* qtd), (memoria4[2]* qtd), (memoria5[2]* qtd), 1, 2, 3, 4, 5);
 */
 
+/*
 // Recebe o código e a quantidade do produto vendido
 // Calcule e mostre o valor a pagar
 // Retorne o valor total a ser pago
@@ -78,4 +79,55 @@ window.alert(`O total a pagar é: R$${preco.toFixed(2)}.`);
 };
 
 calculePreco((2.00*quant), (2.50*quant), (3.00*quant), (4.00*quant), (3.00*quant));
+*/
+
+// Recebe 3 números (U1,U2,U3) com um decimal cada -> correspondem a nota de uma aluno na UFRN. 
+
+// Tranformar solução em uma função e automatizá-la
+
+let memoria = [0, 0, 0];
+memoria[0] = parseFloat(prompt(`Digite a nota da Prova 1 com até um decimal`));
+memoria[1] = parseFloat(prompt(`Digite a nota da Prova 2 com até um decimal`));
+memoria[2] = parseFloat(prompt(`Digite a nota da Prova 3 com até um decimal`));
+
+function calcularClassificarMedias (calculoDaMedia, calculoMediaFinal) {
+let media = calculoDaMedia;
+window.alert(`A média do aluno foi de ${(media).toFixed(1)}`);
+
+if (media >= 7) {
+    window.alert(`Aluno aprovado!`);
+} else if (media >= 5 && media <= 6.9) {
+    window.alert(`Aluno aprovado por nota.`);
+} else if (media < 3) {
+    window.alert(`Aluno reprovado.`);
+} else if (media >= 3 && media <= 4.9) {
+
+    let u4 = parseFloat(prompt(`Digite a nota da Prova 4 com até um decimal`));
+
+    menorNota = Math.min(memoria); // Math.min() -> procura o menor valor dentro de um array.
+    if (menorNota == memoria[0]) {
+        memoria[0] = u4;
+    } else if (menorNota == memoria[1]) {
+        memoria[1] = u4;
+    } else if (menorNota == memoria[2]) {
+        memoria[1] = u4;
+    }
+
+    mediaFinal = (calculoMediaFinal);
+    if (mediaFinal >= 7) {
+        window.alert(`Aluno aprovado!`);
+    } else if (mediaFinal <= 5 && mediaFinal <= 6.9 && u4 > 3) {
+        window.alert(`Aluno aprovado por nota.`);
+    } else {
+        window.alert(`Aluno reprovado.`);
+    }
+}
+};
+
+calcularClassificarMedias (((memoria[0] + memoria[1] + memoria[2]) / 3), ((memoria[0] + memoria[1] + memoria[2]) / 3));
+
+
+
+
+
 
