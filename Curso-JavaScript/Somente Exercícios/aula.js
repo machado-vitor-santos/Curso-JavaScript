@@ -85,6 +85,7 @@ calculePreco((2.00*quant), (2.50*quant), (3.00*quant), (4.00*quant), (3.00*quant
 
 // Tranformar solução em uma função e automatizá-la
 
+/*
 let memoria = [0, 0, 0];
 memoria[0] = parseFloat(prompt(`Digite a nota da Prova 1 com até um decimal`));
 memoria[1] = parseFloat(prompt(`Digite a nota da Prova 2 com até um decimal`));
@@ -125,9 +126,42 @@ if (media >= 7) {
 };
 
 calcularClassificarMedias (((memoria[0] + memoria[1] + memoria[2]) / 3), ((memoria[0] + memoria[1] + memoria[2]) / 3));
+*/
 
 
 
+// Receber um número referente a um dia do ano de 2021
+// Calcular o dia da semana com base na entrada (importante nessas soluções envolvendo repetição identificar o padrão com o qual estamos lindando, a fim de que se torne possível alcançar a solução)
+// Mostra na daída qual dia da semana esse número representa
+
+// 1° dia do ano de 2021 : Sexta-feira
+// 2° dia do ano de 2021 : Sábado
+// 3° dia do ano de 2021 : Domingo
+// 4° dia do ano de 2021 : Segunda-feira
+// 5° dia do ano de 2021 : Terça-feira
+// 6° dia do ano de 2021 : Quarta-feira
+// 7° dia do ano de 2021 : Quinta-feira
+// 8° dia do ano de 2021 : Sexta-feira
+
+
+/*
+let mesDoAnoDe2021 = parseInt(prompt(`Digite o mês do ano em números: Ex:
+1 = 'Janeiro;
+2 = 'Favereiro ...
+12 = 'Dezembro'`));
+let diaDoAnoDe2021 = parseInt(prompt(`Digite o dia do mês de 2021:`));
+
+
+let memoria = [0,0,0];
+let diaDaSemana = ['Quinta-feira','Sexta-feira','Sábado','Domingo','Segunda-feira','Terça-feira','Quarta-feira']; // nesta ordem para corresponder a sequência proposta pela variável 'memoria[2]'
+
+
+memoria[0] = new Date (mesDoAnoDe2021, diaDoAnoDe2021, 2021); // retona a data no seguinte formato (mês, dia, ano)
+memoria[1] = memoria[0].getDay(); // obtém o dia da semana sendo domingo[0], segunda[1]... sábado[6]
+memoria[2] = memoria[1]; //armazena o espaço de memória[1] para evitar bugs
+
+window.alert(`O dia da semana é ${diaDaSemana[memoria[2]]}`);
+*/
 
 
 
