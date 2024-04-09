@@ -163,5 +163,38 @@ memoria[2] = memoria[1]; //armazena o espaço de memória[1] para evitar bugs
 window.alert(`O dia da semana é ${diaDaSemana[memoria[2]]}`);
 */
 
+// Recebe 6 valores
+// DiscernirValoreQuantosPositivos; RetornarSomaDosValores().
+// mostre quantos desses valores digitados foram positivos
+// retorna a sema de todos os valores positivos digitados
+
+// tranforme a solução em uma função e automatize-a
+
+/*
+let memoria = [0,0,0,0,0,0];
+let numDePositivos = 0;
+let somDosNum = 0;
+
+memoria[0] = parseInt(prompt(`Digite um valor:`));
+memoria[1] = parseInt(prompt(`Digite um valor:`));
+memoria[2] = parseInt(prompt(`Digite um valor:`));
+memoria[3] = parseInt(prompt(`Digite um valor:`));
+memoria[4] = parseInt(prompt(`Digite um valor:`));
+memoria[5] = parseInt(prompt(`Digite um valor:`));
+
+function contarSomarPositivos (){
+for (let i = 0; i < memoria.length; ++i){ // para i = 0 até que i < 6 adicione mais 1;
+if (memoria[i] > 0) {
+   numDePositivos++; // Incrementa o número de positivos (++1)
+   somDosNum += memoria[i]; //Soma os valores positivos
+} 
+}
+
+prompt(`o total de números positivos é de ${numDePositivos} e a somatória dos números positivos é de: ${somDosNum}`);
+};
+
+contarSomarPositivos();
+*/
+
 
 
