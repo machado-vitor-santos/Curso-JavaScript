@@ -196,5 +196,42 @@ prompt(`o total de números positivos é de ${numDePositivos} e a somatória dos
 contarSomarPositivos();
 */
 
+// Fazer este programa funcionar
+// Executa 5 vezes o camando alert com a mensagem 'Bom dia'
 
+/*
+function contadoAte5BomDia () {
+for (let i = 0 ; i < 5 ; ++i){
+    window.alert(`Bom Dia!`);
+}
+};
+
+contadoAte5BomDia ();
+*/
+
+// Há duas cidades; A e B; A têm crescimento populacional de 3,5% ao ano; B têm crescimento populacional de 1% ao ano.
+
+// Recebe dois valores inteiros que representam as populações das cidades A e B respectivamente.
+
+// Calcular em quantos anos a população da cidade A será maior ou igual a da cidade B; considere que o valor recebido recebido para a cidade A será menor ou igual que a população para a cidade B.
+
+// O programa deve imprimir a quantidade de anos na
+
+window.alert(`Lembre-se que a cidade A deve ter população menor que a cidade B`);
+let A = parseInt(prompt(`Digite a população da cidade A`));
+let B = parseInt(prompt(`Digite a população da cidade B`));
+
+let popA = ((A*3.5)/100); // Crescimento populacional de A
+let popB = ((B*1)/100); // Crescimento populacional de B
+let anos = 0; // Criação variável anos
+
+while(A < B){ // Enquanto população A for menor que B
+
+    A = A + popA; // A recebe população inicial de A + crescimento pop absoluto
+    B = B + popB; // B recebe população inicial de B + crescimento pop absoluto
+    
+    anos = anos + 1; // anos recebe ela mesma acrescida de 1
+}
+
+window.alert(`${anos}`);  
 
