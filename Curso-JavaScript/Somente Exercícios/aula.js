@@ -217,6 +217,7 @@ contadoAte5BomDia ();
 
 // O programa deve imprimir a quantidade de anos na
 
+/*
 window.alert(`Lembre-se que a cidade A deve ter população menor que a cidade B`);
 let A = parseInt(prompt(`Digite a população da cidade A`));
 let B = parseInt(prompt(`Digite a população da cidade B`));
@@ -234,4 +235,39 @@ while(A < B){ // Enquanto população A for menor que B
 }
 
 window.alert(`${anos}`);  
+*/
+
+// Recebe um número indeterminado de dados, contendo cada um a idade de um indivíduo;
+
+// Calcular e imprimir a idade média do grupo de indivíduos
+
+//O programa deve ser encerrado quando uma idade negativa dor informada, e esta não deve ser considerada no cálculo da média
+
+
+// Laço Do.. While
+
+let memoria = []; 
+let idade = 0; // contendo cada um a idade de um indivíduo;
+let somaIdades = 0; // 1° fator para calcular a média
+let numeroDeRepeticoes = 0; // 2° atributo necessário para calcular a média
+
+// Porque eu usei um do{} while(); -> Porquê é um comando com o número de repetições indefinidas até que a condição que o array receba um número negativo ocorra. Caso, soubesse o número de repetições poderia ter utilizado um for(let){}.
+
+//Lembrar do simples, revisar no momento da escrita cada parÂmetro lógico.
+
+do {
+idade = parseInt(prompt(`Digite uma idade:`)); //recebe a variável de entrada
+if (idade >= 0){ // condição para filtrar o conteúdo que será recebido dentro do array memória
+memoria.push(idade); // a variável memoória não precisa estar associada ao índice para adicionar o elemento. Ex: memoria[i].push(idade); E a varíavel.push(necessita aqui do valor a ser adicionado dentro do array).
+somaIdades += idade;
+numeroDeRepeticoes ++;
+} //adiciona mais 1 a variável contador
+} while (idade >= 0); // A variável que encerra o comando não é a variável que é recebida por memória[i], como eu tinha pensado, mas sim o elemento 'idade' e repetirá enquanto este foir positivo.
+
+let media = (somaIdades/numeroDeRepeticoes);
+window.alert(`A média entre as idades dos indivíduos é de ${media}`);
+
+
+
+
 
