@@ -246,6 +246,7 @@ window.alert(`${anos}`);
 
 // Laço Do.. While
 
+/*
 let memoria = []; 
 let idade = 0; // contendo cada um a idade de um indivíduo;
 let somaIdades = 0; // 1° fator para calcular a média
@@ -262,11 +263,29 @@ memoria.push(idade); // a variável memoória não precisa estar associada ao í
 somaIdades += idade;
 numeroDeRepeticoes ++;
 } //adiciona mais 1 a variável contador
-} while (idade >= 0); // A variável que encerra o comando não é a variável que é recebida por memória[i], como eu tinha pensado, mas sim o elemento 'idade' e repetirá enquanto este foir positivo.
+} while (idade >= 0); // A variável que encerra o comando não é a variável que é recebida por memória[i], como eu tinha pensado, mas sim o elemento 'idade' e repetirá enquanto este for positivo.
 
 let media = (somaIdades/numeroDeRepeticoes);
 window.alert(`A média entre as idades dos indivíduos é de ${media}`);
+*/
 
+// Recebe números inteiros positivos como entrada
+
+// Para quando o número recebido for 22
+
+// Mostre todos os números recebidos, com excessão do 22
+
+let memoria = [];
+let numero = 0;
+
+do {
+    numero = parseInt(prompt(`Digite um número:`));
+    if(numero >= 0 && numero !== 22){
+        memoria.push(numero);
+    }
+} while (numero !== 22);
+
+window.alert(`[${memoria},]`);
 
 
 
