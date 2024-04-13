@@ -274,7 +274,7 @@ window.alert(`A média entre as idades dos indivíduos é de ${media}`);
 // Para quando o número recebido for 22
 
 // Mostre todos os números recebidos, com excessão do 22
-
+/*
 let memoria = [];
 let numero = 0;
 
@@ -286,7 +286,30 @@ do {
 } while (numero !== 22);
 
 window.alert(`[${memoria},]`);
+*/
 
+// Exercício média válida
 
+// Recebe dois números reais referentes a duas notas de um aluno;
 
+// O programa deve calcular a média dessas notas e imprimir na saída, descartando valores inválidos;
+/*
+let memoria = [];
+let nota = 0;
+let contador = 0;
+let media = 0;
+do {
+    nota = parseFloat(prompt(`Digite um número:`))
+    if (nota > 10 || nota < 0 || typeof nota !== 'number'){
+        window.alert(`Nota inválida`);
+    } else {
+        memoria.push(nota);
+        contador ++;
+    }
+} while (contador <= 1);
+media = ((memoria[0] + memoria[1]) / contador);
 
+window.alert(`A média dos números ${memoria[0]} e ${memoria[1]} é ${media}`);
+
+// O problema do código a cima é que quando o número é inválido o número não deve ser introduzido no array.
+*/
