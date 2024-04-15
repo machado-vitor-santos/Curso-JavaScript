@@ -313,3 +313,31 @@ window.alert(`A média dos números ${memoria[0]} e ${memoria[1]} é ${media}`);
 
 // O problema do código a cima é que quando o número é inválido o número não deve ser introduzido no array.
 */
+
+
+//Porcentagem dos maiores que 15
+// Recebe vários números inteiros
+// calcula a porcentagem dos números ímpares > que 15 dentre todos os números
+// Imprima ma saída o valor da porcentagem seguido d0 caractere %
+// O programa deve encem[cerrar quando for recebido o número 0
+
+let memoria = [];
+let valor = 0;
+contadorImpares15 = 0;
+
+do {
+valor = parseInt(prompt(`Digite um número:`));
+
+if (valor % 3 == 0 && valor > 15){
+    contadorImpares15++;
+}
+   
+if(valor !== 0 ){
+    memoria.push(valor);
+}
+
+} while( valor !== 0);
+
+let porcentagemdeImp = ((contadorImpares15/(memoria.length))*100);
+window.alert(`O percentual é de ${porcentagemdeImp} %`);
+
