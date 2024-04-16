@@ -321,6 +321,7 @@ window.alert(`A média dos números ${memoria[0]} e ${memoria[1]} é ${media}`);
 // Imprima ma saída o valor da porcentagem seguido d0 caractere %
 // O programa deve encem[cerrar quando for recebido o número 0
 
+/*
 let memoria = [];
 let valor = 0;
 contadorImpares15 = 0;
@@ -340,4 +341,19 @@ if(valor !== 0 ){
 
 let porcentagemdeImp = ((contadorImpares15/(memoria.length))*100);
 window.alert(`O percentual é de ${porcentagemdeImp} %`);
+*/
 
+
+// Exercício fatorial de um número
+// Recebe um valor N
+// Calcula o fatorial de N
+// Retorna o fatorial de N
+
+let N = parseInt(prompt(`Digite um número:`));
+let fatorial = N; /*armazená-se N em um espaço de memoria fatorial*/
+
+for (let i = 1; i < N; ++i) { /*esta parte é essencial no código, uma vez que queremos que a contagem vá até apenas um número que precede N para poder funcionar*/
+    fatorial = fatorial * (N-i)
+};
+
+window.prompt(`O fatorial de ${N} é ${fatorial}`);
