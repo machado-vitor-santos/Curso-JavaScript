@@ -349,11 +349,26 @@ window.alert(`O percentual é de ${porcentagemdeImp} %`);
 // Calcula o fatorial de N
 // Retorna o fatorial de N
 
-let N = parseInt(prompt(`Digite um número:`));
-let fatorial = N; /*armazená-se N em um espaço de memoria fatorial*/
+// let N = parseInt(prompt(`Digite um número:`));
+// let fatorial = N; /*armazená-se N em um espaço de memoria fatorial*/
 
-for (let i = 1; i < N; ++i) { /*esta parte é essencial no código, uma vez que queremos que a contagem vá até apenas um número que precede N para poder funcionar*/
-    fatorial = fatorial * (N-i)
-};
+// for (let i = 1; i < N; ++i) { /*esta parte é essencial no código, uma vez que queremos que a contagem vá até apenas um número que precede N para poder funcionar*/
+//     fatorial = fatorial * (N-i)
+// };
 
-window.prompt(`O fatorial de ${N} é ${fatorial}`);
+// window.prompt(`O fatorial de ${N} é ${fatorial}`);
+
+// Os divisores de um número inteiro
+// Recebe um número inteiro N
+// Retorna todos os divisores de N
+
+let N = 0;
+let divisoresDeN = [];
+N = parseInt(prompt(`Digite um número:`));
+for (let i = 1; i <= N; ++i) {
+    if (N % i === 0) {
+        divisoresDeN.push(i);
+    }
+}
+
+window.alert(`Os divisores de ${N}, são ${divisoresDeN}`)
