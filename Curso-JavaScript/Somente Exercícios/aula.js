@@ -362,6 +362,7 @@ window.alert(`O percentual é de ${porcentagemdeImp} %`);
 // Recebe um número inteiro N
 // Retorna todos os divisores de N
 
+/*
 let N = 0;
 let divisoresDeN = [];
 N = parseInt(prompt(`Digite um número:`));
@@ -372,3 +373,40 @@ for (let i = 1; i <= N; ++i) {
 }
 
 window.alert(`Os divisores de ${N}, são ${divisoresDeN}`)
+*/
+
+//Método de herão
+//Recebe um número positivo N
+//Imprime a raiz quadrada de N
+
+// Em seguida o programa deve calcular 5 e imprimir 5 aproximações da raiz quadrada desse número usando o Método de Herão a fim de compara a eficiência do método.
+
+// Recebe um número positivo N
+// Escreve na Saída os N primeiros termos da sequência de Fibonacci (esta a qual tem seus dois primerios termos iguais a 1) A partir do terceiro termo cada termo é a soma dos dois que o antecederam antes.
+
+let N = window.prompt(`Digite os N primeiros termos da sequência de Fibonacci:`) // Informe o número de termos da sequência de Fibonacci
+
+let t1 = 1; //Termo 1 recebe 1
+let t2 = 1; //Termo 2 recebe 1
+
+for (let i = 1 ; i <= N ; ++i){ // conte de 1 a N
+    if (i == 1 || i == 2){ // se i == (1 ou 2) escreva 1
+        console.log(1);
+    } else { // Se não
+        tn = t1 + t2; // tn(termo genérico = (t1+t2))
+        console.log(tn); // Escreva termo genérico (tn)
+
+        t1=t2; // t1 recebe termo t2
+        t2=tn; // termo t2 recebe tn = (t1+t2)
+    }
+};
+
+
+
+
+
+
+
+
+
+
