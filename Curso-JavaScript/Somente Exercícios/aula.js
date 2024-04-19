@@ -384,6 +384,7 @@ window.alert(`Os divisores de ${N}, são ${divisoresDeN}`)
 // Recebe um número positivo N
 // Escreve na Saída os N primeiros termos da sequência de Fibonacci (esta a qual tem seus dois primerios termos iguais a 1) A partir do terceiro termo cada termo é a soma dos dois que o antecederam antes.
 
+/*
 let N = window.prompt(`Digite os N primeiros termos da sequência de Fibonacci:`) // Informe o número de termos da sequência de Fibonacci
 
 let t1 = 1; //Termo 1 recebe 1
@@ -400,10 +401,19 @@ for (let i = 1 ; i <= N ; ++i){ // conte de 1 a N
         t2=tn; // termo t2 recebe tn = (t1+t2)
     }
 };
+*/
+
+// Crie uma função que retorne o valor da exponencial para qualquer numero 'x' informado:
 
 
+let x = parseInt(prompt(`Digite um número:`));
+memoria = [];
 
+for (let i = 1; i <= 10; ++i) {
+    memoria.push(Math.pow(x,i));
+}
 
+window.alert(memoria);
 
 
 
