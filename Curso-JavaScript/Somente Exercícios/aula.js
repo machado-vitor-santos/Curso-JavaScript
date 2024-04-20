@@ -405,6 +405,7 @@ for (let i = 1 ; i <= N ; ++i){ // conte de 1 a N
 
 // Crie uma função que retorne o valor da exponencial para qualquer numero 'x' informado:
 
+/*
 
 let x = parseInt(prompt(`Digite um número:`));
 memoria = [];
@@ -414,9 +415,34 @@ for (let i = 1; i <= 10; ++i) {
 }
 
 window.alert(memoria);
+*/
+
+// Faça um programa que recebe um número inteiro N e conte quantos dígitos esse número tem
+
+// 1 - Receber o valor N;
+// 2 - Criar uma variável para contar os dígitos;
+// 3- Iniciar a repetição, para dividir por n por 10 até que N seja igual a zero;
+// Ex: 273/10  = 27/10  = 2/10 = 0
 
 
+// 4- contar os dígitos através das repetições
+// 5 - mostrar a quantidade de dígitos
+
+// Condição de parada N =0
+// Condição de repetição N !== 0
 
 
+var N = parseInt(prompt(`Digite um número:`)); // Recebe o número inteiro
+
+let cont = 0; // estabelece um contador = 0;
+var memoria = N; // Salva a memória capturada em N em uma memória auxiliar
+
+while(N!==0){ // Uso do while, lembrando que a repetição acontece enquanto a condição não for satisfeita, neste caso (N == 0);
+    N = parseInt(N/10); // Dado o exemplo, é muito importante que a divisão seja por um número inteiro, Ex: 273/10  = 27/10  = 2/10 = 0
+    cont++; // registra o número de divisões feitas
+}
+
+window.alert(`O número de digitos em ${memoria} é de ${cont}`)
+// leia o número inicial guardado na memória auxiliar, e exiba quantas vezes o contador teve que realizar as operações de divdir por 10.
 
 
