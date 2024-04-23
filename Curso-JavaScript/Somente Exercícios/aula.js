@@ -431,7 +431,7 @@ window.alert(memoria);
 // Condição de parada N =0
 // Condição de repetição N !== 0
 
-
+/*
 var N = parseInt(prompt(`Digite um número:`)); // Recebe o número inteiro
 
 let cont = 0; // estabelece um contador = 0;
@@ -444,5 +444,33 @@ while(N!==0){ // Uso do while, lembrando que a repetição acontece enquanto a c
 
 window.alert(`O número de digitos em ${memoria} é de ${cont}`)
 // leia o número inicial guardado na memória auxiliar, e exiba quantas vezes o contador teve que realizar as operações de divdir por 10.
+*/
+
+// Tempo de vida de um material radioativo
+
+// Recebe um valor inteiro que representa a massa M de um material radioativo em gramas (teclado)
+
+// Calcule o tempo necessário para o material atingir < 0,5g (Finalidade)
+
+// Deve imprimir o resultado expresso em minutos e segundos na saída (Resultado)
+
+// O tempo de meia-vida (1/2) do material é de 50 segundos
+
+// relacionar a massa de um material radiotivo com o tempo necessário para a redução da sua massa inicial a um valor menor que 0,5g
 
 
+let massa = parseFloat(prompt(`Digite a massa inicial do material radiotivo em questão em gramas: `)); // recebe a massa digitada pelo teclado
+
+let tempo  = 0; // variável tempo atribuida como zero
+
+window.alert(`tempo ${tempo} ; massa ${massa}`); // teste para ver que valores de variável estão entrando na equação
+
+while (massa > 0.5) { // condição
+    massa = (massa / 2); // o foco é em um cálculo que retorne a saída segundo a intenção. E nada mais que isso.
+    tempo = tempo + 50;
+};
+
+let minutos = parseInt(tempo/60); // a divisão por inteiro para capturar os minutos
+let segundos = tempo % 60; // o resto da divisão para capturar os segundos
+
+window.alert(`minutos ${minutos} ; segundos ${segundos}`); // exposição dos resultados
